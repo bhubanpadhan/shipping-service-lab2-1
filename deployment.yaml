@@ -12,7 +12,7 @@ spec:
         app: shipping-service
     spec:
       containers:
-      - image: us.icr.io/bootcamp1/shipping-service-bootcamp:3
+      - image: us.icr.io/lab-cnb1/shipping-service-js-33-pipeline:latest
         name: shipping-service
         ports:
         - name: app-port
