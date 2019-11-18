@@ -22,12 +22,12 @@ describe('Shipping controller', function () {
 
   it('Should calculate correct shipping ', async function () {
     let shipping = await shippingCtrl.getItemShipping({ id: 1, type: 'standard' })
-    expect(shipping).toBe(0.5)
+    expect(shipping).toBe(0.555555)
   })
 
   it('Should calculate correct overnight shipping ', async function () {
     let shipping = await shippingCtrl.getItemShipping({ id: 1, type: 'overnight' })
-    expect(shipping).toBe(5)
+    expect(shipping).toBe(5444444)
   })
 
 })
